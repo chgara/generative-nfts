@@ -141,11 +141,11 @@ const createFiles = async (edition) => {
 
     let key = hash.toString();
     if (Exists.has(key)) {
-      console.log(
-        `Duplicate creation for edition ${i}. Same as edition ${Exists.get(
-          key
-        )}`
-      );
+      // console.log(
+      //   `Duplicate creation for edition ${i}. Same as edition ${Exists.get(
+      //     key
+      //   )}`
+      // );
       numDupes++;
       if (numDupes > edition) break; //prevents infinite loop if no more unique items can be created
       i--;

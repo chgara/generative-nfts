@@ -59,7 +59,7 @@ async function uploadMetadata(metadataNames) {
       " added to IPFS with the path ",
       result.path
     );
-    results.push(result);
+    results.push("ipfs://" + result.path);
   }
   return results;
 }
@@ -83,8 +83,7 @@ const uploadToIPFS = async () => {
   const photosURI = await uploadPhotos(photos);
   addPhotosURIToMetadata(metadata, photosURI);
   const metadataURI = await uploadMetadata(metadata);
-  console.log(metadataURI);
-  // Write to a file
+  fs.writeFileSync("./build/metadata.json", JSON.stringify(metadataURI));
 };
 
 uploadToIPFS();
