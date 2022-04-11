@@ -1,6 +1,6 @@
 # Generative NFTs
 
-This are tow main commandline utilities that lets you create genetarive images from parts of <br>
+These are tow commandline utilities that lets you create genetarive images from parts of <br>
 images. The second utility uploads all the files and the metadata automatically to a decentraliced <br>
 storege (IPFS)
 
