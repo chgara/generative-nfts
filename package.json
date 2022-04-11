@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node index.js",
+    "upload": "node src/ipfs.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Chgara",

@@ -12,9 +12,9 @@ let counter = 0;
 
 async function addFile(file, id) {
   const added = await client.add(file);
-  if (counter >= 10) {
+  if (counter >= 8) {
     // Doing this to avoid 429 HTTP error
-    await delay(50000);
+    await delay(40000);
     counter = 0;
   }
   counter++;
